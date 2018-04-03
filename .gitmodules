@@ -1,0 +1,3 @@
+[submodule "gatorgrader"]
+	path = gatorgrader
+	url = https://github.com/gkapfham/gatorgrader.git
