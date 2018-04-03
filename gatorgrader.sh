@@ -163,9 +163,9 @@ if [ "$CHECK" = true ]; then
                                      --checkfiles ArrayList.java --fragments "public static void main" --fragmentcounts 1
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least five beyond current commit count
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 18
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 20
   determine_exit_code $?
- echo ""
+  echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
 
   # return the exit value from running the commands
