@@ -114,9 +114,9 @@ if [ "$CHECK" = true ]; then
   printf "%s\n" "${red}Checking the assignment with Gradle!${end}"
   echo ""
   printf "%s\n" "${blu}Starting to run the Gradle checks...${end}"
-  /usr/bin/gradle clean check
+  gradle clean check
   determine_exit_code $?
-  /usr/bin/gradle build
+  gradle build
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}...Finished running the Gradle checks${end}"
@@ -163,7 +163,7 @@ if [ "$CHECK" = true ]; then
                                      --checkfiles ArrayList.java --fragments "public static void main" --fragmentcounts 1
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least five beyond current commit count
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 20
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 21
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
