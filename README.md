@@ -142,14 +142,14 @@ typing `cd ..` and then continuing your work.
 
 Typing the command `gradle run` in the terminal window produces the following
 output for the instructor's version of `labnine.list.ArrayList`. Notice that
-this program will create an `ArrayList` of size ten and then first the first and
-then the last element. It is critical that your program does not crash by
-throwing an exception when performing these operations on an instance of an
-`ArrayList`. Finally, please note that this laboratory assignment invites you to
-run comprehensive JUnit test suites for two Java classes. While these test
-suites do not produce any output, you should carefully inspect their tests so
-that you understand their strategy. In particular, it is critically important
-that you study and understand every test case in `TestArrayList`!
+this program will create an `ArrayList` of size ten and then remove the first
+and then remove the last element. It is critical that your program does not
+crash by throwing an exception when performing these operations on an instance
+of an `ArrayList`. Finally, please note that this laboratory assignment invites
+you to run comprehensive JUnit test suites for two Java classes. While these
+test suites do not produce any output, you should carefully inspect their tests
+so that you understand their strategy. In particular, it is critically
+important that you study and understand every test case in `TestArrayList`!
 
 ```
 ArrayList before removing first element:
